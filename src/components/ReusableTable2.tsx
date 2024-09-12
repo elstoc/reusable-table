@@ -65,10 +65,10 @@ export const ReusableTable = <T,>({ data, columnProps }: RTProps<T>) => {
 
 export const ExampleTable = () => {
     const columnProps: ColumnProps<Animal>[] = [
-        { title: 'Name', type: 'string', value: (row: Animal) => row.name },
-        { title: 'Description', type: 'string', value: (row: Animal) => row.description },
-        { title: 'Number of legs', type: 'number', value: (row: Animal) => row.numberOfLegs },
-        { title: 'Has tail', type: 'string', value: (row: Animal) => row.hasTail ? 'Yes' : 'No' },
+        { title: 'Name', type: 'string', value: (row) => row.name },
+        { title: 'Description', type: 'string', value: (row) => row.description },
+        { title: 'Number of legs', type: 'number', value: (row) => row.numberOfLegs },
+        { title: 'Has tail', type: 'string', value: (row) => row.hasTail ? 'Yes' : 'No' },
     ]
     return <ReusableTable data={animalData} columnProps={columnProps} />
 }
