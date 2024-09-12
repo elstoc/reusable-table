@@ -1,4 +1,4 @@
-type Animal = {
+export type Animal = {
     name: string,
     numberOfLegs: number,
     hasTail: boolean,

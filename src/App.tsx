@@ -1,4 +1,4 @@
-import {ExampleTable} from "./components/ReusableTable.tsx";
+import {ExampleTable} from "./components/ReusableTable2.tsx";
 
 function App () {
     return <ExampleTable></ExampleTable>
